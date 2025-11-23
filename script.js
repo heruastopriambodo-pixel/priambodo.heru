@@ -1,11 +1,17 @@
-// Tunggu sampai DOM (elemen HTML) selesai dimuat
+// Pastikan semua kode dijalankan setelah semua elemen HTML (DOM) selesai dimuat
 document.addEventListener('DOMContentLoaded', function() {
+
+    // =======================================
+    // 1. Logika Klik Tombol Salam
+    // =======================================
     
-    // 1. Dapatkan elemen tombol dan elemen salam berdasarkan ID
+    // Dapatkan tombol dan elemen salam
     const tombolUbah = document.getElementById('tombol-ubah');
     const elemenSalam = document.getElementById('salam');
 
-    // 2. Tentukan fungsi yang akan dijalankan saat tombol diklik
+    // Teks default sebelum tombol diklik
+    elemenSalam.textContent = "Klik tombol di bawah ini untuk melihat pesan sapaan khusus!";
+
     tombolUbah.addEventListener('click', function() {
         
         // Logika Waktu
@@ -14,22 +20,50 @@ document.addEventListener('DOMContentLoaded', function() {
         let pesanBaru;
 
         if (jam < 12) {
-            pesanBaru = "Selamat Pagi! Terima kasih sudah mengunjungi website ini.";
+            pesanBaru = "Selamat Pagi! Tetap semangat membangun masa depan yang cerah.";
         } else if (jam < 18) {
-            pesanBaru = "Selamat Siang/Sore! Semoga harimu menyenangkan.";
+            pesanBaru = "Selamat Siang/Sore! Semoga produktif dan membawa kemajuan.";
         } else {
-            pesanBaru = "Selamat Malam! Saatnya bersantai.";
+            pesanBaru = "Selamat Malam! Saatnya istirahat dan mempersiapkan Indonesia yang lebih baik.";
         }
 
-        // 3. Ubah isi teks elemen salam
+        // Ubah isi teks elemen salam
         elemenSalam.textContent = pesanBaru;
         
-        // Nonaktifkan tombol agar tidak diklik berkali-kali
+        // Nonaktifkan tombol
         tombolUbah.textContent = "Pesan Sudah Tampil!";
         tombolUbah.disabled = true;
     });
-    
-    // Isi teks awal saat halaman dimuat (sebelum tombol diklik)
-    elemenSalam.textContent = "Klik tombol di bawah ini untuk melihat pesan sapaan khusus!";
-    console.log("Script JS siap.");
+
+    // =======================================
+    // 2. Logika Klik Proyek A, B, dan C
+    // =======================================
+
+    // Dapatkan elemen proyek dan tempat pesan
+    const proyekA = document.getElementById('proyek-a');
+    const proyekB = document.getElementById('proyek-b');
+    const proyekC = document.getElementById('proyek-c');
+    const pesanProyek = document.getElementById('pesan-proyek');
+
+    // ----------------------------------------------------
+    // Menambahkan Event Listener untuk Proyek A, B, C
+    // ----------------------------------------------------
+
+    proyekA.addEventListener('click', function() {
+        // Pesan yang diminta untuk Proyek A
+        pesanProyek.textContent = "Hallo";
+    });
+
+    proyekB.addEventListener('click', function() {
+        // Pesan yang diminta untuk Proyek B
+        pesanProyek.textContent = "Tunggu";
+    });
+
+    proyekC.addEventListener('click', function() {
+        // Pesan yang diminta untuk Proyek C
+        pesanProyek.textContent = "Tanggal Mainnya";
+    });
+
+    // Logging di konsol
+    console.log("Script JavaScript berhasil dimuat dan siap beraksi.");
 });
