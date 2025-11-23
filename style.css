@@ -17,6 +17,20 @@ h1, h2 {
     letter-spacing: -0.02em; /* Sedikit rapat */
     color: #1d1d1f;
 }
+/* style.css - Bagian LIGHT MODE */
+body {
+    /* ... properti font dan lainnya ... */
+    background-color: #f0f0f5; 
+    color: #1d1d1f; 
+    
+    /* --- KODE BARU UNTUK FOTO LATAR BELAKANG --- */
+    background-image: url('images/background.jpg'); /* Sesuaikan path file */
+    background-size: cover; /* Pastikan foto menutupi seluruh layar */
+    background-attachment: fixed; /* Foto tetap di tempat saat di-scroll */
+    background-repeat: no-repeat; /* Pastikan foto tidak terulang */
+    
+    /* ... properti transisi dan lainnya ... */
+}
 
 /* ======================================= */
 /* 2. HEADER & NAVIGASI (MINIMALIS) */
@@ -165,4 +179,61 @@ footer {
         background-color: #2c2c2d;
         border-color: #333;
     }
+    /* Di dalam @media (prefers-color-scheme: dark) { ... } */
+
+#proyek li {
+    background-color: #2c2c2d;
+    border-color: #333;
+    color: #f5f5f7;
+}
+
+#proyek li:hover {
+    background-color: #3b3b5c; 
+    border-color: #55c8f8; 
+    box-shadow: 0 4px 12px rgba(85, 200, 248, 0.2); 
+    color: #55c8f8;
+}
+}
+/* style.css - Bagian DARK MODE */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgba(0, 0, 0, 0.7); /* Tambahkan overlay gelap */
+        background-image: url('images/background.jpg'); /* Ulangi link foto */
+        background-blend-mode: multiply; /* Agar foto terlihat lebih gelap */
+        /* ... properti background-size, attachment, dll. juga perlu diulang jika tidak tercantum di Light Mode ... */
+        
+        color: #f5f5f7; 
+    }
+}
+/* --- Penimpaan untuk Tampilan Proyek Baru (LIGHT MODE) --- */
+
+/* Menimpa #proyek ul agar menjadi tata letak 3 kolom */
+#proyek ul {
+    list-style: none;
+    padding: 0;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 20px;
+}
+
+/* Menimpa #proyek li agar menjadi kartu interaktif */
+#proyek li {
+    background-color: #0d0de7; 
+    padding: 30px; /* Lebih besar dari padding lama */
+    border-radius: 12px;
+    border: 1px solid #2424a0;
+    cursor: pointer; 
+    transition: all 0.2s ease-in-out; 
+    text-align: center; 
+    font-weight: 500;
+    color: #1d1d1f; /* Menimpa warna teks lama */
+}
+
+/* Menambahkan efek hover baru (ini pasti baru) */
+#proyek li:hover {
+    background-color: #11e1c5; 
+    border-color: #0070c9; 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 12px rgba(0, 112, 201, 0.1); 
+    color: #0070c9; 
 }
