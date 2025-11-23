@@ -51,17 +51,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     proyekA.addEventListener('click', function() {
         // Pesan yang diminta untuk Proyek A
-        pesanProyek.textContent = "Hallo";
+        pesanProyek.textContent = "Hallo, ini ada projek webiste pertama saya";
     });
 
     proyekB.addEventListener('click', function() {
         // Pesan yang diminta untuk Proyek B
-        pesanProyek.textContent = "Tunggu";
+        pesanProyek.textContent = "Tunggu ya , kita akan maju melakah kedepan";
     });
 
     proyekC.addEventListener('click', function() {
         // Pesan yang diminta untuk Proyek C
-        pesanProyek.textContent = "Tanggal Mainnya";
+        pesanProyek.textContent = "Tanggal Mainnya, kita sesuaikan";
     });
 
     // Logging di konsol
