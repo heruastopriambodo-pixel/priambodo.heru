@@ -1,0 +1,97 @@
+/* Aturan dasar untuk seluruh halaman */
+body {
+    font-family: 'Arial', sans-serif; /* Mengatur jenis font */
+    margin: 0; /* Menghilangkan margin bawaan browser */
+    padding: 0; /* Menghilangkan padding bawaan browser */
+    background-color: #f4f4f9; /* Warna latar belakang halaman */
+    color: #333; /* Warna teks utama */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+/* Penataan Header (Kepala Halaman) */
+header {
+    background-color: #007bff; /* Biru cerah */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Penataan Navigasi (Menu) */
+nav a {
+    color: white;
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s; /* Efek transisi saat di-hover */
+}
+
+nav a:hover {
+    color: #ffd700; /* Warna kuning saat kursor di atas link */
+}
+
+/* Penataan Konten Utama */
+main {
+    padding: 20px;
+    max-width: 900px; /* Batasi lebar konten agar nyaman dibaca */
+    margin: 20px auto; /* Membuat konten berada di tengah halaman */
+    background-color: white;
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Penataan Bagian (section) */
+section {
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd; /* Garis pemisah antar section */
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Penataan Tombol */
+button {
+    background-color: #28a745; /* Hijau */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; /* Menampilkan kursor tangan */
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Hijau yang lebih gelap saat di-hover */
+}
+
+/* Penataan List Proyek */
+#proyek ul {
+    list-style-type: none; /* Menghilangkan bullet point */
+    padding: 0;
+}
+
+#proyek li {
+    background-color: #e9ecef;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Penataan Footer (Kaki Halaman) */
+footer {
+    background-color: #343a40; /* Abu-abu gelap */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
