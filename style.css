@@ -95,3 +95,49 @@ footer {
     padding: 15px 0;
     margin-top: 30px;
 }
+/* --- Aturan Mode Gelap (Dark Mode) dimulai di sini --- */
+
+@media (prefers-color-scheme: dark) {
+    /* 1. Balikkan Warna Latar Belakang dan Teks Body */
+    body {
+        background-color: #1a1a2e; /* Latar belakang sangat gelap */
+        color: #e6e6ff; /* Teks sangat terang */
+    }
+
+    /* 2. Sesuaikan Konten Utama */
+    main {
+        background-color: #2c2c45; /* Konten area sedikit lebih terang dari body */
+        box-shadow: none; /* Hilangkan bayangan yang mengganggu di dark mode */
+    }
+
+    /* 3. Sesuaikan Header & Footer */
+    header, footer {
+        background-color: #0f0f2a;
+        color: #e6e6ff;
+    }
+
+    /* 4. Sesuaikan Judul dan Aksen */
+    h2 {
+        color: #8c8cff; /* Judul dengan warna aksen ungu muda */
+        border-bottom-color: #8c8cff;
+    }
+
+    /* 5. Sesuaikan Navigasi */
+    nav a {
+        color: #e6e6ff; /* Pastikan link tetap terang */
+    }
+
+    nav a:hover {
+        color: #ffffa0; /* Warna hover terang */
+    }
+
+    /* 6. Sesuaikan Tombol dan List */
+    button {
+        background-color: #8c8cff;
+        color: #1a1a2e; /* Teks tombol gelap */
+    }
+
+    #proyek li {
+        background-color: #3b3b5c; /* Latar belakang list item */
+    }
+}
