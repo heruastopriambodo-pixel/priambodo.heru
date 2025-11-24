@@ -1,3 +1,4 @@
+
 // Pastikan semua kode dijalankan setelah semua elemen HTML (DOM) selesai dimuat
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const elemenSalam = document.getElementById('salam');
 
     // Teks default sebelum tombol diklik
-    elemenSalam.textContent = "Klik tombol di bawah ini untuk melihat pesan sapaan khusus!";
+    elemenSalam.textContent = "Klik untuk dapat salam!";
 
     tombolUbah.addEventListener('click', function() {
         
@@ -24,14 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (jam < 18) {
             pesanBaru = "Selamat Siang/Sore! Semoga produktif dan membawa kemajuan.";
         } else {
-            pesanBaru = "Selamat Malam! Saatnya istirahat dan mempersiapkan Indonesia yang lebih baik Let'Goooooo.";
+            pesanBaru = "Selamat Malam! Saatnya istirahat dan mempersiapkan Indonesia yang lebih baik.";
         }
 
         // Ubah isi teks elemen salam
         elemenSalam.textContent = pesanBaru;
         
         // Nonaktifkan tombol
-        tombolUbah.textContent = "Pesan Sudah Tampil!";
+        tombolUbah.textContent = "Salam Pesan sudah tampil untukmu!";
         tombolUbah.disabled = true;
     });
 
@@ -56,12 +57,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     proyekB.addEventListener('click', function() {
         // Pesan yang diminta untuk Proyek B
-        pesanProyek.textContent = "Tunggu ya , kita akan maju melakah kedepan terus maju";
+        pesanProyek.textContent = "Tunggu ya , kita akan maju melakah kedepan";
     });
 
     proyekC.addEventListener('click', function() {
         // Pesan yang diminta untuk Proyek C
-        pesanProyek.textContent = "Tanggal Mainnya, kita sesuaikan yah";
+        pesanProyek.textContent = "Tanggal Mainnya, kita sesuaikan";
     });
 
     // Logging di konsol

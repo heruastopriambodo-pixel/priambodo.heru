@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,25 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heru - Website Pertama Saya</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" 
+crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <h1>Priambodo</h1>
         <nav>
+            <a href="#" id="toggle-about">Tentang Saya</a>
             <a href="index.html">Beranda</a>
-            <a href="#about">Tentang Saya</a>
             <a href="#proyek">Proyek Masa Depan</a>
         </nav>
     </header>
 
     <main>
-        <section id="about"> 
-            <h2>TENTANG SAYA </h2>
+            <section id="about-me-section" class="about-me-content">
+    <div class="about-me-container">
+        <img src="images/Profile.jpg" alt="Foto Profil Heru" class="profile-photo">
 
-            <p>Selamat datang! Nama saya Heru Asto Priambodo, ini webiste pertama saya untuk masa depan yang cerah kedepanya. Mari bersama-sama bangun Indonesia lebih baik dan maju.</p>
-            
-    
+        <div class="about-me-text">
+            <h2>Halo, Saya Heru Asto Priambodo!</h2>
+            <p>
+                Results-driven professional specializing in Operational Support and Service Excellence
+                <p>
+                Proven ability to optimize internal processes and ensure high customer satisfaction through detail-oriented and adaptive service
+                </p>
+                <p>
+
+        </div>
+    </div>
+</section>
             <button id="tombol-ubah">Klik untuk melihat pesan</button>
             
             <p id="salam" style="margin-top: 20px; font-weight: bold; color: #a8aeb4;">Akan ada pesan ucapan selamat datang yang muncul di sini, diubah oleh JavaScript.</p>
@@ -50,5 +65,33 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    // Pastikan kode berjalan setelah seluruh dokumen dimuat
+    document.addEventListener('DOMContentLoaded', function() {
+        // Ambil elemen link/tombol "Tentang Saya"
+        const toggleButton = document.getElementById('toggle-about');
+        // Ambil elemen bagian konten yang ingin ditampilkan/disembunyikan
+        const aboutSection = document.getElementById('about-me-section');
+
+        // Pastikan kedua elemen ditemukan
+        if (toggleButton && aboutSection) {
+            toggleButton.addEventListener('click', function(e) {
+                // Mencegah browser pindah halaman karena menggunakan tag <a> href="#"
+                e.preventDefault(); 
+
+                // Cek status display saat ini
+                if (aboutSection.style.display === 'flex') {
+                    // Jika sedang terlihat, sembunyikan
+                    aboutSection.style.display = 'none';
+                } else {
+                    // Jika sedang tersembunyi, tampilkan menggunakan 'flex' (sesuai CSS)
+                    aboutSection.style.display = 'flex';
+                    // Opsional: Gulir ke bagian ini setelah ditampilkan
+                    aboutSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        }
+    });
+</script>
 </body>
 </html>

@@ -239,3 +239,68 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 112, 201, 0.1); 
     color: #0070c9; 
 }
+
+/* -------------------------------------- */
+/* CSS untuk Konten "Tentang Saya" */
+/* -------------------------------------- */
+
+.about-me-content {
+    /* **PENTING: Mengatur konten tersembunyi secara default** */
+    display: none; 
+    
+    width: 85%; /* Sesuaikan lebar konten */
+    max-width: 1000px;
+    margin: 50px auto; /* Menengahkan dan memberi jarak */
+    padding: 30px;
+    background-color: #100f0f; /* Latar belakang bagian konten */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-container {
+    display: flex; /* Mengatur foto dan teks bersebelahan */
+    gap: 40px; /* Jarak antara foto dan teks */
+    align-items: flex-start; /* Meratakan konten di bagian atas */
+}
+
+.profile-photo {
+    width: 200px; /* Ukuran foto */
+    height: 200px; /* Ukuran foto */
+    object-fit: cover; /* Memastikan foto terpotong rapi tanpa merenggang */
+    border-radius: 50%; /* Membuat foto berbentuk **bulat** */
+    flex-shrink: 0; /* Mencegah foto menyusut */
+}
+
+.about-me-text {
+    /* Menggunakan Font Poppins, Bold */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200; 
+    font-size: 1em; /* Ukuran font lebih besar */
+    margin-bottom: 80px;
+    
+    /* Warna Oranye/Salmon */
+    color: #E5735E; /* Warna yang mendekati contoh */
+}
+/* 3. GAYA PARAGRAF (Body Text) */
+.about-me-text p {
+    /* Menggunakan Font Poppins, Reguler/Normal */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em; /* Ukuran font paragraf sedikit lebih besar */
+    line-height: 1.8; /* Jarak baris yang lebih lega */
+    margin-bottom: 20px;
+    
+    /* Warna Teks Hijau Gelap/Teal */
+    color: #2F5D54;}
+
+/* Responsif untuk layar kecil (Ponsel) */
+@media (max-width: 768px) {
+    .about-me-container {
+        flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+        align-items: center; /* Menengahkan elemen */
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+    }
+}
