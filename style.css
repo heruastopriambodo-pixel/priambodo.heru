@@ -200,7 +200,7 @@ footer {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: rgba(0, 0, 0, 0.7); /* Tambahkan overlay gelap */
-        background-image: url('images/background.jpg'); /* Ulangi link foto */
+        background-image: url('background.jpg'); /* Ulangi link foto */
         background-blend-mode: multiply; /* Agar foto terlihat lebih gelap */
         /* ... properti background-size, attachment, dll. juga perlu diulang jika tidak tercantum di Light Mode ... */
         
