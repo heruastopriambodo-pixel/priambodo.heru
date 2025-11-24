@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (jam < 18) {
             pesanBaru = "Selamat Siang/Sore! Semoga produktif dan membawa kemajuan.";
         } else {
-            pesanBaru = "Selamat Malam! Saatnya istirahat dan mempersiapkan Indonesia yang lebih baik.";
+            pesanBaru = "Selamat Malam! Saatnya istirahat dan mempersiapkan Indonesia yang lebih baik Let'Goooooo.";
         }
 
         // Ubah isi teks elemen salam
@@ -56,12 +56,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     proyekB.addEventListener('click', function() {
         // Pesan yang diminta untuk Proyek B
-        pesanProyek.textContent = "Tunggu ya , kita akan maju melakah kedepan";
+        pesanProyek.textContent = "Tunggu ya , kita akan maju melakah kedepan terus maju";
     });
 
     proyekC.addEventListener('click', function() {
         // Pesan yang diminta untuk Proyek C
-        pesanProyek.textContent = "Tanggal Mainnya, kita sesuaikan";
+        pesanProyek.textContent = "Tanggal Mainnya, kita sesuaikan yah";
     });
 
     // Logging di konsol
