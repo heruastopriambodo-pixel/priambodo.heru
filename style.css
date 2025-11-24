@@ -65,7 +65,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #0070c9; /* Biru aksi khas Apple */
+    color: #c90036; /* Biru aksi khas Apple */
 }
 
 /* ======================================= */
@@ -90,7 +90,7 @@ section:last-child {
 /* 4. TOMBOL DAN ELEMEN AKSI */
 /* ======================================= */
 button {
-    background-color: #0070c9; /* Biru aksi */
+    background-color: #c41437; /* Biru aksi */
     color: white;
     border: none;
     padding: 12px 25px;
@@ -103,7 +103,7 @@ button {
 }
 
 button:hover {
-    background-color: #0077ed;
+    background-color: #c79595;
 }
 
 /* List Proyek (Minimalis) */
@@ -116,7 +116,7 @@ button:hover {
 }
 
 #proyek li {
-    background-color: #f5f5f7;
+    background-color: #d11124;
     padding: 20px;
     border-radius: 12px;
     flex: 1 1 300px; /* Fleksibel, minimal 300px */
@@ -191,9 +191,9 @@ footer {
 
 #proyek li:hover {
     background-color: #3b3b5c; 
-    border-color: #55c8f8; 
+    border-color: #f85576; 
     box-shadow: 0 4px 12px rgba(85, 200, 248, 0.2); 
-    color: #55c8f8;
+    color: #b41336;
 }
 }
 /* style.css - Bagian DARK MODE */
@@ -220,10 +220,10 @@ footer {
 
 /* Menimpa #proyek li agar menjadi kartu interaktif */
 #proyek li {
-    background-color: #0d0de7; 
+    background-color: #e70d2e; 
     padding: 30px; /* Lebih besar dari padding lama */
     border-radius: 12px;
-    border: 1px solid #2424a0;
+    border: 1px solid #e9e0e2;
     cursor: pointer; 
     transition: all 0.2s ease-in-out; 
     text-align: center; 
@@ -233,11 +233,11 @@ footer {
 
 /* Menambahkan efek hover baru (ini pasti baru) */
 #proyek li:hover {
-    background-color: #11e1c5; 
+    background-color: #e1113e; 
     border-color: #7c7f81; 
     transform: translateY(-3px); 
     box-shadow: 0 4px 12px rgba(0, 112, 201, 0.1); 
-    color: #0070c9; 
+    color: #e9d8df; 
 }
 
 /* -------------------------------------- */
