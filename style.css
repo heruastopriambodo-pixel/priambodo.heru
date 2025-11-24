@@ -15,7 +15,9 @@ body {
 h1, h2 {
     font-weight: 600; /* Tebal sedang */
     letter-spacing: -0.02em; /* Sedikit rapat */
-    color: #1d1d1f;
+    color: #010110;
+    /* --- KODE BARU UNTUK POSISI TENGAH --- */
+    text-align: center;
 }
 /* style.css - Bagian LIGHT MODE */
 body {
@@ -161,7 +163,7 @@ footer {
     }
 
     nav a:hover {
-        color: #55c8f8; /* Biru aksen yang lebih terang di dark mode */
+        color: #4f7383; /* Biru aksen yang lebih terang di dark mode */
     }
 
     /* Garis pemisah, footer, dan list item */
@@ -232,7 +234,7 @@ footer {
 /* Menambahkan efek hover baru (ini pasti baru) */
 #proyek li:hover {
     background-color: #11e1c5; 
-    border-color: #0070c9; 
+    border-color: #7c7f81; 
     transform: translateY(-3px); 
     box-shadow: 0 4px 12px rgba(0, 112, 201, 0.1); 
     color: #0070c9; 
